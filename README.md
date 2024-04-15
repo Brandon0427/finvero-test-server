@@ -38,7 +38,7 @@ This repository contains the codebase for a backend server built using Nest.js, 
 
 * * *
 
->       git clone 'https://github.com/Capital-Zen/Belvo-Microservice-Server.git'
+>       git clone 'https://github.com/Brandon0427/finvero-test-server.git'
 
 * * *
     
