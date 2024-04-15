@@ -48,7 +48,7 @@ export class AccountService {
                 route: '/api/transactions/',
                 params: {
                     link: account.link,
-                    page_size: '10'
+                    page_size: '100'
                 }
             }
 

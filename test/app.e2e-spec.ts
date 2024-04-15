@@ -47,7 +47,9 @@ describe('App e2e', () => {
   describe('Auth', () => {
     const dto: AuthDto = {
       email: 'brandon@grupoldm.com.mx',
-      password: 'TestingPassword'
+      password: 'TestingPassword',
+      firstName: 'User',
+      lastName: 'Test'
     }
 
     //Sign Up Route Testing

@@ -19,7 +19,9 @@ export class AuthService{
             const user = await this.prisma.user.create({
                 data: {
                     email: dto.email,
-                    hash
+                    hash,
+                    firstName: dto.firstName,
+                    lastName: dto.lastName
                 },
     
                 //Items to return, the fields not stated are by default on false
@@ -79,7 +81,7 @@ export class AuthService{
         const accessToken = await this.jwt.signAsync(
             payload, 
             {
-                expiresIn: '60m',
+                expiresIn: '360m',
                 secret
             }
         );

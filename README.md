@@ -57,11 +57,27 @@ This repository contains the codebase for a backend server built using Nest.js, 
 - DATABASE_URL=xxxxxxxxxx
 - JWT_SECRET=xxxxxxxxxx
 
+*Belvo Sandbox Credentials*
+- BASE_URL_BELVO_SANDBOX=xxxxxxxxxx
+- SECRET_ID_BELVO_SANDBOX=xxxxxxxxxx
+- SECRET_BELVO_PASSWORD_1_SANDBOX=xxxxxxxxxx
+- SECRET_BELVO_PASSWORD_2_SANDBOX=xxxxxxxxxx
+
+*Remember there is only one password, however as it contains # it has to be divided in two parts*
+
 6.  Inside the .env.test file add the following secrets (you must sustitute to the actual values):
 
 *Postgres Database URL*
 - DATABASE_URL=xxxxxxxxxx
 - JWT_SECRET=xxxxxxxxxx
+
+*Belvo Sandbox Credentials*
+- BASE_URL_BELVO_SANDBOX=xxxxxxxxxx
+- SECRET_ID_BELVO_SANDBOX=xxxxxxxxxx
+- SECRET_BELVO_PASSWORD_1_SANDBOX=xxxxxxxxxx
+- SECRET_BELVO_PASSWORD_2_SANDBOX=xxxxxxxxxx
+
+*Remember there is only one password, however as it contains # it has to be divided in two parts*
 
 ## Launching the project
 
@@ -190,10 +206,30 @@ This repository contains the codebase for a backend server built using Nest.js, 
 
 ## Project status
 
-Main branch of the project is currently being developed.
+Main branch of the project is fully developed as for the purpose of the projects
+
+## Active REST Http Requests
+
+### Get Requests
+- Current User: '/users/me'
+- All Current User's Belvo Account Link: '/accounts'
+- Current User's Belvo Account Link by ID: '/accounts/:id/'
+- Transactions with Belvo Account Links by ID: '/accounts/:id/transactions'
+
+### Post Requests
+- Sign Up User: '/auth/signup'
+- Sign In User: '/auth/signin'
+- Create a User Belvo Account Link: '/accounts'
+
+### Patch Requests
+- Edit Current User Information: '/users'
+- Edit Belvo Account by ID: '/accounts/:id/'
+- Edit Current User Information: '/users'
+
+### Delete Requests
+- Delete All Current User's Belvo Account Links: '/accounts/:id/'
 
 ## Useful Commands
-
 - Creating the Controller of a Module without Additional Configuration.
 
 * * *
