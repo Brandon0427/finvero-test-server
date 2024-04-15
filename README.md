@@ -1,8 +1,8 @@
-# Nest.js Backend Example Server
+# Nest.js Backend Finvero Test Server
 
 ## Description
 
-This repository contains the codebase for a backend server built using Nest.js, a progressive Node.js framework for building efficient, reliable, and scalable server-side applications.
+This repository contains the codebase for a backend server built using Nest.js to interact with local Postgres DB on Docker and interact with Belvo on Sandbox Environment, a progressive Node.js framework for building efficient, reliable, and scalable server-side applications.
 
 ## Features
 
